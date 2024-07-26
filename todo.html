@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ToDo List</title>
+    <link rel="icon" href="file.png">
+    <style>
+        body {
+            background-image: url(bg.jpg);
+            text-align: center;
+            font-family: cursive;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        h1 {
+            color: black;
+        }
+
+        input {
+            padding: 20px;
+            font-family: cursive;
+            font-weight: bold;
+            font-size: 15px;
+            color: black;
+            text-align: center;
+            border-radius: 20px;
+            backdrop-filter: blur(2px);
+            background-color: rgba(241, 247, 248, 0.164);
+            border: solid whitesmoke 2px;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        .add {
+            background-color: rgba(14, 255, 255, 0.849);
+            border: solid white 2px;
+            font-family: cursive;
+            font-weight: bold;
+            font-size: 15px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 10px;
+        }
+
+        #listbox {
+            color: black;
+        }
+
+        #listbox button {
+            background-color: transparent;
+            padding: 10px;
+            color: red;
+            border: none;
+            font-family: cursive;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        #listbox button:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>ToDo LiSt</h1>
+
+    <input id="text">
+    <button onclick="add()" class="add">Add</button>
+    <ul id="listbox" style="list-style: none;">
+
+    </ul>
+
+
+    <script src="script.js"></script>
+ 
+</body>
+
+</html>
